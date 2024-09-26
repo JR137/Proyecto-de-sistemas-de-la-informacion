@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/menu.css">
+    <title>FlixMind</title>
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <a class="navbar-brand" href="./menu.html">
+                    <img src="./img/logoFlixMind.jpg" width="90" height="90" alt="Peliculas" />
+                </a>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="menu.html">Inicio</a></li>
+                        <li><a href="now-playing.html">Ultimos lanzamientos</a></li>
+                        <li><a href="popular.html">Populares</a></li>
+                        <li><a href="./php/cerrar_sesion.php">Cerrar sesion</a></li>
+                        <form  id="form">
+                            <input type="text" placeholder="Search" id="search" class="search">
+                        </form>
+                    </ul>
+                </nav>
+            </div>       
+        </div>
+    </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Previous Page</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Next Page</div>
+
+    </div>
+
+    <script src="./js/menu.js"></script>
+</body>
+</html>
